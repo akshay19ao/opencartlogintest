@@ -1,0 +1,17 @@
+<suite name="Suite">
+
+  <test name="OpenCart Test">
+
+    <groups>
+      <run>
+        <include name="Master"/>
+      </run>
+    </groups>
+
+    <classes>
+      <class name="testCases.TC_004_AccountRegressionTest"/>
+      <class name="testCases.TC_005_LoginRegressionTest"/>
+    </classes>
+
+  </test>
+</suite>

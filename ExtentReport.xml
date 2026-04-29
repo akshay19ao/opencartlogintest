@@ -1,0 +1,26 @@
+<suite name="Suite">
+
+  <groups>
+    <run>
+      <include name="Sanity"/>
+      <include name="Regression"/>
+      <include name="Master"/>
+    </run>
+  </groups>
+
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners> 	
+
+  <test name="Test" thread-count="5">
+
+    <parameter name="browser" value="chrome"/>
+
+    <classes>
+      <class name="testCases.TC_004_AccountRegressionTest"/>
+      <class name="testCases.TC_005_LoginRegressionTest"/>
+    </classes>
+
+  </test>
+
+</suite>

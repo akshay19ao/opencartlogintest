@@ -30,7 +30,8 @@ public class TC_004_AccountRegressionTest extends BaseClass_Regression
 			regpage.setLastName(randomeString().toUpperCase());
 			logger.info("Provided Last Name ");
 
-			regpage.setEmail(randomeString() + "@gmail.com");// randomly generated the email
+			//regpage.setEmail(randomeString() + "@gmail.com");// randomly generated the email
+			regpage.setEmail("testingsel123@gmail.com");
 			//regpage.setEmail("pavannoltraining@gmail.com");// duplicate email should fail test case
 			logger.info("Provided Email ");
 

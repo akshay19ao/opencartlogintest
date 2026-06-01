@@ -55,7 +55,7 @@ public void setLastName(String lname) {
 }
 
 public void setEmail(String email) {
-	txtEmail.sendKeys("test1test@test.com");
+	txtEmail.sendKeys("stdonedebugging22421@gmail.com");
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 }

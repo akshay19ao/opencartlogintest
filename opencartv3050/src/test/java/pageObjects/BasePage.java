@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
 
-	WebDriver driver;
+	protected WebDriver driver;
 	
 	public BasePage(WebDriver driver)
 	{
@@ -15,4 +15,11 @@ public class BasePage {
 		PageFactory.initElements(driver,this);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
+	
+
+	public void waitTimeout() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
+	}
+	
 }
